@@ -1,0 +1,9 @@
+a=10
+b=5
+print("value of a=",a)
+print("value of b=",b)
+a=a+b
+b=a-b
+a=a-b
+print("value of a=",a)
+print("value of b=",b)
