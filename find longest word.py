@@ -8,5 +8,5 @@ for i in list:
     print(a)
     li.append(a)
 print(li)
-for j in li:
-    print()
+longest=max(li)
+print(longest)
