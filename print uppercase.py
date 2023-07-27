@@ -5,9 +5,7 @@ print(li)
 list=[]
 a=""
 for i in li:
-     print(i)
      if i[0].isupper():
          list.append(i)
          a+=i
-print(list)
-print(a)
+print("letters start with upper case are ",list)
