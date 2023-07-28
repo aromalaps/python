@@ -1,12 +1,12 @@
 #write a program that takes a sentence as an input and print the longest word in the sentence?
+b=0
 sentence=input("enter some sentence")
 list=sentence.split()
 print(list)
-li=[]
+long=""
 for i in list:
     a=len(i)
-    print(a)
-    li.append(a)
-print(li)
-longest=max(li)
-print(longest)
+    if a>b:
+      b=a
+      long=i
+print("longest is",long)
