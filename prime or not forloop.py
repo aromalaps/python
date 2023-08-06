@@ -12,7 +12,7 @@
 #      break
 # if num==2:
 #print("it is a prime number") 
-num=12
+num=int(input('enter a number'))
 count=0
 if num<1:
     print("it is not a prime number")
