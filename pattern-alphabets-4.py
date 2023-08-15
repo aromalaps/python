@@ -3,10 +3,11 @@
 # klmno
 # pqrst
 # uvwxy
-for i in range(65,71):
-    for i in range(65,i):
-           print(chr(i),end=" ")
-           print(chr(i+1),end=" ")
-    print()
-
-    
+x=5
+y=5
+count=65
+for i in range(x):
+    for j in range(y):
+        print(chr(count),end=" ")
+        count+=1
+    print( )
