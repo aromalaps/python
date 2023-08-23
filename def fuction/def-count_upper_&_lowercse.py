@@ -8,12 +8,11 @@ def alpha(sent):
     count=0
     lower=0
     for i in sent:
-      if i.isupper()==True:
+      if i.isupper():
          count+=1
-      else:
+      elif i.islower():
          lower+=1
-    print("uppercase=",count)
-    print("lowercase=",lower)
-sent="That is A caR"
+    print("no of uppercase cahracters :",count)
+    print("o of lower case Characters :",lower)
+sent="The quick Brow Fox"
 alpha(sent)
-
