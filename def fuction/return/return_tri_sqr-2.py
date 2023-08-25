@@ -3,7 +3,7 @@
 def sum_of_squares(sum,input):
     for i in range(1,input+1):
         sum+=i*i
+        print(sum)
     return sum
 s=sum_of_squares(0,4)
 print(s)
-
