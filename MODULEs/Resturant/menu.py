@@ -4,12 +4,12 @@
 # Import this module and use it to display the menu and calculate the total cost of a customer's order?
 menuu={"Fry rice":150,"biriyani":200,"alfam":170,"shawarma":100}
 def add():
-    manager=input("items to add enter add""items to remove enter remove ""retrive the price of specific item enter retrive")
+    manager=input("items to add enter add""items to remove enter remove ""retrive the price of specific item enter retrive or enter purchase to calculate ")
     if manager=="add":
         manage=input("enter the items the add")
         if manager not in menuu:
               price=int(input("enter the price of the item"))
-              dict[manage]=price
+              menuu[manage]=price
     elif manager=="remove":
         remove=input("enter the items to remove")
         if remove in list:
@@ -17,14 +17,25 @@ def add():
     elif manager=="retrive":
         retrive=input("enter the item name to get the actual price")
         print(menuu[retrive])
+    elif manager=="purchase":
+        print("enter the items to calculate")
+    
+    else:
+        print("invalid entry")
+        add()
 def cost():
     print(menuu)
     x=0
-    while x>len(menuu):
+    sum=0
+    while x<len(menuu):
         purchase=input("enter the item")
+        count=int(input("enter the count"))
         if purchase in menuu:
-            sum=menuu[purchase]
-            sum+=0
+            sum+=menuu[purchase]
+            sum*=count
+        elif purchase=="exit":
+            break
+        else:
+            print("this item is not in the list",menuu)
         x+=1
-cost()
-add()
+    print(sum)
