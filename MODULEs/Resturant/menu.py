@@ -29,8 +29,8 @@ def cost():
     sum=0
     while x<len(menuu):
         purchase=input("enter the item")
-        count=int(input("enter the count"))
         if purchase in menuu:
+            count=int(input("enter the count"))
             sum+=menuu[purchase]
             sum*=count
         elif purchase=="exit":
